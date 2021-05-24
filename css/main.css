@@ -34,14 +34,14 @@ img {
   list-style: none;
 }
 
-.container, .section, .team, .header, .hero, .footer {
+.container, .section, .work, .team, .header, .hero, .footer {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .container, .section, .team, .header, .hero, .footer {
+  .container, .section, .work, .team, .header, .hero, .footer {
     max-width: 768px;
     margin: 0 auto;
     padding-left: 15px;
@@ -50,7 +50,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container, .section, .team, .header, .hero, .footer {
+  .container, .section, .work, .team, .header, .hero, .footer {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
@@ -96,13 +96,13 @@ img {
   border: 0;
 }
 
-.section, .team {
+.section, .work, .team {
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
 @media screen and (min-width: 1200px) {
-  .section, .team {
+  .section, .work, .team {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -525,6 +525,16 @@ textarea {
 }
 
 .work {
+  display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .work {
+    display: block;
+  }
+}
+
+.work__header {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
