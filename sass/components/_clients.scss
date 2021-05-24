@@ -1,21 +1,49 @@
+.clients {
+  @extend .section;
+}
+
+.clients__header {
+  @extend .team__head;
+}
+
 .clients__list {
   @extend .list;
   display: flex;
+  flex-wrap: wrap;
 }
 
-.clients__item:not(:last-child) {
-  margin-right: 30px;
+.clients__item {
+  margin-bottom: 30px;
+  flex-basis: calc((100%-60px) / 2);
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100%-90px) / 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100%-90px) / 6);
+  }
 }
 
 .clients__link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 92px;
   border: 1px solid $icons-color;
   box-sizing: border-box;
   border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+    height: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+    height: 92px;
+  }
 
   transition-property: border;
   transition-duration: 250ms;
