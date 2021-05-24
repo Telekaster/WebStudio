@@ -15,6 +15,7 @@ p {
 
 img {
   display: block;
+  max-width: 100%;
 }
 
 .link, .header__logo, .nav__link, .phone__link, .logo--revers, .footer__adress, .footer__contacts {
