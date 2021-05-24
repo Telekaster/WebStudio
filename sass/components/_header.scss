@@ -1,7 +1,11 @@
 .header {
   @extend .container;
-  display: flex;
-  align-items: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .header-portfolio {
@@ -10,8 +14,9 @@
 
 .header__logo {
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 68px;
   font-family: $brand-font;
   font-weight: bold;
   font-size: 26px;
@@ -19,6 +24,16 @@
   letter-spacing: 0.03em;
   color: $black-text-color;
   @extend .link;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__logo--blue {
@@ -30,18 +45,31 @@
 }
 
 .nav {
-  display: flex;
-  align-items: center;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .nav__list {
   @extend .list;
-  display: flex;
-  margin-left: 93px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+.nav__item {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
 }
 
 .nav__link {
@@ -97,13 +125,26 @@
 
 .phone {
   @extend .list;
-  display: flex;
-  margin-left: auto;
-  align-items: center;
+  display: block;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
 }
 
-.phone__item:not(:last-child) {
-  margin-right: 50px;
+.phone__item {
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+  }
+  @media screen and (min-width: 1200px) {
+    display: block;
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+  }
 }
 
 .phone__link {
@@ -111,13 +152,28 @@
   display: flex;
   align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: $main-text-color;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: $main-text-color;
+  }
 }
 
 .phone__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
 }

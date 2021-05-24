@@ -35,10 +35,27 @@ img {
 }
 
 .container, .header, .footer {
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (min-width: 768px) {
+  .container, .header, .footer {
+    max-width: 768px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container, .header, .footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .link, .header__logo, .nav__link, .phone__link, .logo--revers, .footer__adress, .footer__contacts {
@@ -141,13 +158,18 @@ textarea {
   outline: none;
 }
 
-.header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
 .header-portfolio {
@@ -158,14 +180,29 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding-top: 24px;
-  padding-bottom: 25px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-right: 68px;
   font-family: Raleway, sans-serif;
   font-weight: bold;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: #212121;
+}
+
+@media screen and (min-width: 768px) {
+  .header__logo {
+    padding-top: 26px;
+    padding-bottom: 26px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .header__logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+  }
 }
 
 .header__logo--blue {
@@ -176,24 +213,42 @@ textarea {
   color: #2196f3;
 }
 
-.nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+@media screen and (min-width: 768px) {
+  .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
 }
 
-.nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: 93px;
+@media screen and (min-width: 768px) {
+  .nav__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .nav__list {
+    margin-left: 93px;
+  }
+}
+
+.nav__item {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .nav__item {
+    display: block;
+  }
+  .nav__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .nav__link {
@@ -247,17 +302,38 @@ textarea {
 }
 
 .phone {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-left: auto;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  display: block;
 }
 
-.phone__item:not(:last-child) {
-  margin-right: 50px;
+@media screen and (min-width: 1200px) {
+  .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: auto;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.phone__item {
+  display: none;
+}
+
+@media screen and (min-width: 768px) {
+  .phone__item {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .phone__item {
+    display: block;
+  }
+  .phone__item:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .phone__link {
@@ -268,15 +344,35 @@ textarea {
       -ms-flex-align: center;
           align-items: center;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #757575;
 }
 
+@media screen and (min-width: 1200px) {
+  .phone__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: 0.02em;
+    color: #757575;
+  }
+}
+
 .phone__icon {
   fill: currentColor;
-  margin-right: 10px;
+  margin-right: 8px;
+  width: 14px;
+  height: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .phone__icon {
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+  }
 }
 
 .hero {
