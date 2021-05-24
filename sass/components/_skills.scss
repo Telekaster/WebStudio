@@ -11,12 +11,28 @@
 
 .card-list {
   @extend .list;
-  display: flex;
-  justify-content: space-between;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-between;
+  }
 }
 
 .card-list__item {
-  padding-right: 30px;
+  text-align: center;
+  @media screen and (max-width: 1199px) {
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100%-60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    flex-basis: calc((100%-60px) / 4);
+  }
 }
 
 .card-list__icon {
@@ -27,6 +43,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -34,4 +51,5 @@
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: left;
 }

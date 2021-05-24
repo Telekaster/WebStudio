@@ -34,14 +34,14 @@ img {
   list-style: none;
 }
 
-.container, .header, .hero, .footer {
+.container, .section, .team, .header, .hero, .footer {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
 }
 
 @media screen and (min-width: 768px) {
-  .container, .header, .hero, .footer {
+  .container, .section, .team, .header, .hero, .footer {
     max-width: 768px;
     margin: 0 auto;
     padding-left: 15px;
@@ -50,7 +50,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container, .header, .hero, .footer {
+  .container, .section, .team, .header, .hero, .footer {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
@@ -97,8 +97,15 @@ img {
 }
 
 .section, .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .section, .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 body {
@@ -454,17 +461,42 @@ textarea {
   overflow: hidden;
 }
 
-.card-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+@media screen and (min-width: 768px) {
+  .card-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: auto;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
 }
 
 .card-list__item {
-  padding-right: 30px;
+  text-align: center;
+}
+
+@media screen and (max-width: 1199px) {
+  .card-list__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-list__item {
+    -ms-flex-preferred-size: calc((100%-60px) / 2);
+        flex-basis: calc((100%-60px) / 2);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-list__item {
+    -ms-flex-preferred-size: calc((100%-60px) / 4);
+        flex-basis: calc((100%-60px) / 4);
+  }
 }
 
 .card-list__icon {
@@ -481,6 +513,7 @@ textarea {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin: auto;
   margin-bottom: 30px;
 }
 
@@ -488,6 +521,7 @@ textarea {
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
+  text-align: left;
 }
 
 .work {
