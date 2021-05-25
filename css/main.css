@@ -903,22 +903,26 @@ textarea {
   }
 }
 
+.projects__list .projects__item {
+  margin-bottom: 30px;
+}
+
 @media screen and (min-width: 768px) {
-  .projects__item {
+  .projects__list .projects__item {
     margin-bottom: 30px;
-    -ms-flex-preferred-size: calc((100% - 60px) / 2);
-        flex-basis: calc((100% - 60px) / 2);
+    -ms-flex-preferred-size: calc((100% - 30px) / 2);
+        flex-basis: calc((100% - 30px) / 2);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .projects__item {
+  .projects__list .projects__item {
     -ms-flex-preferred-size: calc((100% - 60px) / 3);
         flex-basis: calc((100% - 60px) / 3);
   }
 }
 
-.projects__item:hover, .projects__item:focus {
+.projects__list:hover, .projects__list:focus {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
   -webkit-transition-property: -webkit-box-shadow;
@@ -979,7 +983,6 @@ textarea {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
-  margin: auto;
   padding: 20px 24px 4px 24px;
 }
 
@@ -988,6 +991,12 @@ textarea {
   padding-right: 24px;
   padding-bottom: 20px;
   color: #757575;
+}
+
+@media screen and (min-width: 768px) {
+  .projects__discription--padding-bottom {
+    padding-bottom: 55px;
+  }
 }
 
 .projects__border {
