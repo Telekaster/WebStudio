@@ -37,9 +37,9 @@
   display: block;
 }
 
-// .mobile-menu__button.is-open .mobile-menu__icon--menu {
-//   display: none;
-// }
+.mobile-menu__button.is-open .mobile-menu__icon--menu {
+  display: none;
+}
 
 .mobile-menu__icon {
   width: 24px;
