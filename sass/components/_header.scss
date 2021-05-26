@@ -1,3 +1,7 @@
+.page-header {
+  position: relative;
+}
+
 .header {
   @extend .container;
   display: flex;
@@ -7,9 +11,7 @@
     align-items: center;
   }
   @media screen and (min-width: 768px) {
-    // display: flex;
     justify-content: space-between;
-    align-items: center;
   }
 }
 
@@ -181,24 +183,4 @@
     width: 16px;
     height: 12px;
   }
-}
-
-.mobile-menu {
-  display: inline-block;
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
-}
-
-.mobile-menu__button {
-  width: 40px;
-  height: 40px;
-  background-color: $background-color-white;
-  border: none;
-}
-
-.mobile-menu__icon {
-  width: 24px;
-  height: 16px;
-  fill: black;
 }

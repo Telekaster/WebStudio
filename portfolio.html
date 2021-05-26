@@ -45,6 +45,53 @@
                             </svg> +38 096 111 11 11</a>
                     </li>
                 </ul>
+
+                <!-- Кнопка мобильного меню -->
+                <div>
+                    <button type=button class="mobile-menu__button is-open" aria-expanded="false" data-menu-button>
+                        <svg class="mobile-menu__icon" width=40 height=40>
+                            <use class="mobile-menu__icon--menu" href="./images/sprite.svg#icon-mobile-menu"></use>
+                            <use class="mobile-menu__icon--cross" href="./images/sprite.svg#icon-cross"></use>
+                
+                        </svg>
+                    </button>
+                </div>
+                
+                <!-- Мобильное меню -->
+                
+                <div class="mobile-menu is-open" data-menu>
+                
+                    <ul class="mobile-menu__list">
+                        <li class="mobile-menu__item"> <a class="mobile-menu__link" href="./index.html">Студия</a>
+                        </li>
+                        <li class="mobile-menu__item"> <a class="mobile-menu__link mobile-menu__link--active-main" href="./portfolio.html">Портфолио</a> </li>
+                        <li class="mobile-menu__item"> <a class="mobile-menu__link" href="">Контакты</a></li>
+                    </ul>
+                
+                    <ul class="mobile-menu__contacts-list">
+                        <li class="mobile-menu__contacts-phone"><a href="tel:+380961111111" class="link">+38 096 111 11 11</a></li>
+                        <li class="mobile-menu__contacts-mail"><a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
+                        </li>
+                
+                    </ul>
+                
+                    <ul class="mobile-menu__social-list">
+                
+                        <li class="mobile-menu__social-item"><a href="https://www.instagram.com/" class="link">Instagram</a></li>
+                        <span class="line">|</span>
+                        <li class="mobile-menu__social-item"><a href="https://twitter.com/?lang=uk" class="link">Twitter</a></li>
+                        <span class="line">|</span>
+                        <li class="mobile-menu__social-item"><a href="https://facebook.com/" class="link">Facebook</a></li>
+                        <span class="line">|</span>
+                        <li class="mobile-menu__social-item"><a href="https://www.linkedin.com/" class="link">LinkedIn</a></li>
+                    </ul>
+                
+                
+                
+                
+                </div>
+
+
             </div>
         </header>
 
@@ -489,6 +536,8 @@
         </div>
     
     </footer>
+
+        <script src="./js/mobile-menu.js"></script>
     
 </body>
 </html>

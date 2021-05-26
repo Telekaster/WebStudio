@@ -1,0 +1,125 @@
+.mobile-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: $background-color-white;
+  height: 100vh;
+  opacity: 0;
+  display: none;
+
+  @media screen and (max-width: 767px) {
+    opacity: 1;
+  }
+
+  &.is-open {
+    display: block;
+  }
+}
+
+.mobile-menu__button {
+  width: 40px;
+  height: 40px;
+  background-color: $background-color-white;
+  border: none;
+  cursor: pointer;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-menu__icon--cross {
+  display: none;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon--cross {
+  display: block;
+}
+
+// .mobile-menu__button.is-open .mobile-menu__icon--menu {
+//   display: none;
+// }
+
+.mobile-menu__icon {
+  width: 24px;
+  height: 16px;
+  fill: black;
+}
+
+.mobile-menu__list {
+  @extend .list;
+  margin-left: 40px;
+  margin-top: 48px;
+  margin-bottom: 270px;
+}
+
+.mobile-menu__item {
+  margin-bottom: 32px;
+}
+
+.mobile-menu__link {
+  @extend .link;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $black-text-color;
+}
+
+.mobile-menu__link--active-main {
+  color: $brandcolor;
+}
+
+.mobile-menu__contacts-list {
+  @extend .list;
+  margin-left: 40px;
+}
+
+.mobile-menu__contacts-phone {
+  @extend .link;
+  margin-bottom: 32px;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 1.18;
+  letter-spacing: 0.02em;
+  color: $brandcolor;
+}
+
+.mobile-menu__contacts-mail {
+  @extend .link;
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: 0.02em;
+  color: $main-text-color;
+
+  margin-bottom: 64px;
+}
+
+.mobile-menu__social-list {
+  @extend .list;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-menu__social-item {
+  font-family: $main-font;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.23;
+  letter-spacing: 0.02em;
+  color: $brandcolor;
+
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.line {
+  color: $main-text-color;
+  margin-right: 10px;
+}
