@@ -100,6 +100,7 @@ img {
 .section, .work, .team, .clients {
   padding-top: 60px;
   padding-bottom: 60px;
+  z-index: 0;
 }
 
 @media screen and (min-width: 1200px) {
@@ -407,6 +408,7 @@ textarea {
   height: 100vh;
   opacity: 0;
   display: none;
+  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -439,6 +441,10 @@ textarea {
 
 .mobile-menu__button.is-open .mobile-menu__icon--cross {
   display: block;
+}
+
+.mobile-menu__button.is-open .mobile-menu__icon--menu {
+  display: none;
 }
 
 .mobile-menu__icon {
