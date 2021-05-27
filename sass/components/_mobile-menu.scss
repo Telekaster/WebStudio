@@ -25,6 +25,8 @@
   border: none;
   cursor: pointer;
 
+  border: brown solid 1px;
+
   @media screen and (min-width: 768px) {
     display: none;
   }
