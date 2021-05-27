@@ -228,15 +228,6 @@
   }
 }
 
-.checkbox__input {
-  appearance: none;
-
-  &:checked + .checkbox__icon {
-    background: #2196f3;
-    border: #2196f3 solid 2px;
-  }
-}
-
 .checkbox__icon {
   position: relative;
   top: 2px;
@@ -246,6 +237,16 @@
   height: 15px;
   border: #212121 solid 2px;
   border-radius: 2px;
+  fill: $background-color-white;
+}
+
+.checkbox__input {
+  appearance: none;
+
+  &:checked + .checkbox__icon {
+    background: $brandcolor;
+    border: #2196f3 solid 2px;
+  }
 }
 
 .modal__agree-text--blue {
