@@ -1,5 +1,6 @@
 .footer {
   @extend .container;
+  margin: auto;
 
   @media screen and (max-width: 767px) {
     text-align: center;
@@ -41,11 +42,6 @@
   display: block;
   margin-bottom: 20px;
 
-  @media screen and (min-width: 768px) {
-    // margin-left: 115px;
-    // margin-right: 234px;
-  }
-
   @media screen and (min-width: 1200px) {
     display: block;
     font-size: 26px;
@@ -58,10 +54,6 @@
 
 .footer__list {
   @extend .list;
-  @media screen and (min-width: 768px) {
-    //   margin-left: 76px;
-    //   margin-right: 165px;
-  }
 }
 
 .footer__item {
@@ -98,10 +90,6 @@
 .footer__socials {
   @media screen and (min-width: 768px) {
     text-align: center;
-    // display: flex;
-    // flex-direction: column;
-    // width: 206px;
-    // height: 80px;
   }
 }
 
@@ -197,7 +185,7 @@
   color: rgba(255, 255, 255, 0.6);
 
   @media screen and (max-width: 479px) {
-    width: 320px;
+    width: 300px;
   }
 
   @media screen and (min-width: 768px) {
@@ -224,7 +212,6 @@
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   cursor: pointer;
-  margin-top: 20px;
 
   @media screen and (min-width: 1200px) {
     margin-left: 12px;

@@ -1,9 +1,10 @@
 .page-header {
   position: relative;
+  @extend .container;
+  margin: auto;
 }
 
 .header {
-  @extend .container;
   display: flex;
 
   @media screen and (max-width: 767px) {
