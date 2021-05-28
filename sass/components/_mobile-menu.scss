@@ -80,13 +80,17 @@
 
 .mobile-menu__contacts-phone {
   @extend .link;
-  margin-bottom: 32px;
+  padding-bottom: 32px;
   font-family: $main-font;
   font-weight: 500;
   font-size: 34px;
   line-height: 1.18;
   letter-spacing: 0.02em;
   color: $brandcolor;
+
+  @media screen and (max-width: 479px) {
+    font-size: 30px;
+  }
 }
 
 .mobile-menu__contacts-mail {
@@ -117,6 +121,10 @@
 
   &:not(:last-child) {
     margin-right: 10px;
+  }
+
+  @media screen and (max-width: 479px) {
+    font-size: 12px;
   }
 }
 

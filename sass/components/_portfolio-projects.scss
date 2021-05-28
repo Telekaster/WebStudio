@@ -10,6 +10,15 @@
 
   .projects__item {
     margin-bottom: 30px;
+    &:hover,
+    &:focus {
+      box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
+        0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+      transition-property: box-shadow;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
     @media screen and (min-width: 768px) {
       margin-bottom: 30px;
       flex-basis: calc((100% - 30px) / 2);
@@ -17,15 +26,6 @@
     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 60px) / 3);
     }
-  }
-
-  &:hover,
-  &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-      1px 4px 6px rgba(0, 0, 0, 0.16);
-    transition-property: box-shadow;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
 }
 
