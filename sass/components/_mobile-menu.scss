@@ -4,10 +4,9 @@
   left: 0;
   width: 100%;
   background-color: $background-color-white;
-  height: 100vh;
+  height: 900vh;
   opacity: 0;
   display: none;
-  z-index: 1;
 
   @media screen and (max-width: 767px) {
     opacity: 1;

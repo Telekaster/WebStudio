@@ -434,10 +434,9 @@ textarea {
   left: 0;
   width: 100%;
   background-color: #ffffff;
-  height: 100vh;
+  height: 900vh;
   opacity: 0;
   display: none;
-  z-index: 1;
 }
 
 @media screen and (max-width: 767px) {
@@ -1189,17 +1188,17 @@ textarea {
   padding: 20px 24px 4px 24px;
 }
 
+@media screen and (max-width: 1199px) {
+  .projects__meta {
+    font-size: 17px;
+  }
+}
+
 .projects__discription {
   padding-left: 24px;
   padding-right: 24px;
   padding-bottom: 20px;
   color: #757575;
-}
-
-@media screen and (min-width: 768px) {
-  .projects__discription--padding-bottom {
-    padding-bottom: 55px;
-  }
 }
 
 .projects__border {
