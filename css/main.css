@@ -1624,6 +1624,7 @@ textarea {
   width: 370px;
   height: 40px;
   margin-bottom: 10px;
+  padding-left: 35px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
