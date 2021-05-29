@@ -1,11 +1,12 @@
 .page-header {
   position: relative;
-  @extend .container;
   margin: auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .header {
   display: flex;
+  @extend .container;
 
   @media screen and (max-width: 767px) {
     justify-content: space-between;

@@ -35,7 +35,7 @@ img {
   list-style: none;
 }
 
-.container, .section, .work, .team, .clients, .page-header, .hero, .footer {
+.container, .section, .work, .team, .clients, .header, .hero, .footer {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
@@ -43,7 +43,7 @@ img {
 }
 
 @media screen and (min-width: 768px) {
-  .container, .section, .work, .team, .clients, .page-header, .hero, .footer {
+  .container, .section, .work, .team, .clients, .header, .hero, .footer {
     max-width: 768px;
     margin: 0 auto;
     padding-left: 15px;
@@ -52,7 +52,7 @@ img {
 }
 
 @media screen and (min-width: 1200px) {
-  .container, .section, .work, .team, .clients, .page-header, .hero, .footer {
+  .container, .section, .work, .team, .clients, .header, .hero, .footer {
     max-width: 1200px;
     margin: 0 auto;
     padding-left: 15px;
@@ -172,6 +172,7 @@ textarea {
 .page-header {
   position: relative;
   margin: auto;
+  border-bottom: 1px solid #ececec;
 }
 
 .header {
@@ -1147,6 +1148,10 @@ textarea {
 .projects__thumb {
   position: relative;
   overflow: hidden;
+  z-index: 0;
+}
+
+.project__picture {
   z-index: 0;
 }
 
