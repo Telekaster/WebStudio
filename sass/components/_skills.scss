@@ -47,6 +47,12 @@
   margin-bottom: 30px;
 }
 
+.card-list__header {
+  @media screen and (min-width: 768px) {
+    text-align: left;
+  }
+}
+
 .card-list__text {
   font-size: 14px;
   line-height: 1.71;

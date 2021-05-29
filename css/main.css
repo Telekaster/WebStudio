@@ -39,6 +39,7 @@ img {
   max-width: 480px;
   padding-left: 15px;
   padding-right: 15px;
+  z-index: 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -437,6 +438,7 @@ textarea {
   height: 900vh;
   opacity: 0;
   display: none;
+  z-index: 99;
 }
 
 @media screen and (max-width: 767px) {
@@ -447,6 +449,7 @@ textarea {
 
 .mobile-menu.is-open {
   display: block;
+  opacity: 1;
 }
 
 .mobile-menu__button {
@@ -700,6 +703,12 @@ textarea {
           align-items: center;
   margin: auto;
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .card-list__header {
+    text-align: left;
+  }
 }
 
 .card-list__text {
@@ -1023,6 +1032,7 @@ textarea {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 40px;
 }
 
 @media screen and (min-width: 768px) {
@@ -1033,7 +1043,6 @@ textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    margin-bottom: 30px;
   }
 }
 
@@ -1138,6 +1147,7 @@ textarea {
 .projects__thumb {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .projects__text {
@@ -1170,12 +1180,13 @@ textarea {
 
 @media screen and (max-width: 479px) {
   .projects__text {
+    height: 294px;
     font-size: 14px;
   }
   .projects__link:hover .projects__text,
   .projects__link:focus .projects__text {
-    -webkit-transform: translateY(-360px);
-            transform: translateY(-360px);
+    -webkit-transform: translateY(-345px);
+            transform: translateY(-345px);
   }
 }
 

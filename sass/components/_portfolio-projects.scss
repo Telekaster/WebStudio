@@ -42,6 +42,7 @@
 .projects__thumb {
   position: relative;
   overflow: hidden;
+  z-index: 0;
 }
 
 .projects__text {
@@ -67,10 +68,11 @@
   }
 
   @media screen and (max-width: 479px) {
+    height: 294px;
     font-size: 14px;
     .projects__link:hover &,
     .projects__link:focus & {
-      transform: translateY(-360px);
+      transform: translateY(-345px);
     }
   }
 }
